@@ -16,6 +16,6 @@ public:
 
     float GetDuration();
 
-    void SetInterval(int interval, linterpolation inputFunc, std::vector<dot>& dots, double k);
+    void SetInterval( linterpolation inputFunc, std::vector<dot>& dots, double k);
 };
 

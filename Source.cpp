@@ -102,14 +102,9 @@ void play(HWND hWnd, WPARAM wp, LPARAM lp, int trackPos)
 
     int i = 1;
 
-    int lastUpdate = clock();
-    int timer = clock();
-    int elapsedTime = 0;
-    int elapsedTimer = 0;
-
     linterpolation inParam;
     Timer cycle;
-    cycle.SetInterval(1000 / globals::FPS, inParam, dots, (double)trackPos/100);
+    cycle.SetInterval(inParam, dots, (double)trackPos/100);
 
 }
 

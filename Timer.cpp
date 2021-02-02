@@ -15,11 +15,10 @@ float Timer::GetDuration()
     return duration.count();
 }
 
-void Timer::SetInterval(int interval, linterpolation inputFunc, std::vector<dot>& dots, double k)
+void Timer::SetInterval( linterpolation inputFunc, std::vector<dot>& dots, double k)
 {
     for (int i = 1; i <= dots.size()-1; i++)
     {
         inputFunc.SetPos(dots[i-1], dots[i], k);
-        //Sleep(1);
     }
 }
