@@ -1,8 +1,7 @@
 #include <windows.h>
-
 #include "Timer.h"
 #include "linterpolation.h"
-//#include "globals.h"
+
 
 void Timer::Start()
 {
